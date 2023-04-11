@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&family=Kanit:ital,wght@1,200&family=Mina&family=Outfit&family=Red+Hat+Display:wght@500&family=Russo+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;;
+}
+
+body{
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container{
+    position: relative;
+    background-color: white;
+    width: 450px;
+    height: 650px;
+    margin: 70px auto;
+    border-radius: 20px 20px 20px 20px;;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text{
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    width: 300px;
+    margin: 10px auto;
+}
+
+
+.inner-container{
+    background-color: hsl(225, 100%, 98%);
+    position: relative;
+    width: 80%;
+    height: 20%;
+    margin: 10px auto;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-container-flex{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.inner-container-flex div{
+    margin-left: 20px;
+}
+
+.submit-container{
+    text-align: center;
+}
+
+.change{
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+
+.change:hover{
+    text-decoration: underline;
+}
+
+button{
+    border: none;
+    width: 300px;
+    height: 40px;
+    margin: 20px auto;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3) ;
+}
+
+button:hover{
+    transform: scale(1.10);
+    transition: 0.75s;
+    cursor: pointer;
+}
+
+.cancel, a{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    
+}
+
+@media screen and (max-width: 375px) { /*Phone User*/
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    .container{
+        max-width: 95%;
+    }
+
+    .vibe{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    .inner-container{
+        padding: 10px;
+    }
+
+    .inner-container-flex div{
+        margin-left: 20px;
+    }
+
+    button{
+        width: 240px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
